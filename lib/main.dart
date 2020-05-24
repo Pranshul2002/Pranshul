@@ -10,7 +10,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Flutter App by Pranshul Goyal',
       theme: ThemeData(
         // This is the theme of your application.
         //
@@ -65,12 +65,14 @@ body: ListView(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: <Widget>[
               SizedBox(height: 50,),
-              SizedBox(width: MediaQuery.of(context).size.width,
-                child: TextFormField(
-                  decoration: InputDecoration(
-                    labelText: _data.text,labelStyle: TextStyle(
-                    fontSize: 30
-                  )
+              SizedBox(width: MediaQuery.of(context).size.width - 20,
+                child: Container(padding: EdgeInsets.all(8.0),
+                  child: TextFormField(
+                    decoration: InputDecoration(
+                      labelText: _data.text,labelStyle: TextStyle(color: Colors.black,
+                      fontSize: 30
+                    ),
+                    ),
                   ),
                 ),
               ),
