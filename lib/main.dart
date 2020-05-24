@@ -68,6 +68,7 @@ body: ListView(
               SizedBox(width: MediaQuery.of(context).size.width - 20,
                 child: Container(padding: EdgeInsets.all(8.0),
                   child: TextFormField(
+                    enabled: false,
                     decoration: InputDecoration(
                       labelText: _data.text,labelStyle: TextStyle(color: Colors.black,
                       fontSize: 30
